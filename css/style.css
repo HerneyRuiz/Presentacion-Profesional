@@ -1,0 +1,245 @@
+@import url('normalize.css');
+@import url('fuentes.css');
+
+
+/* Estilos Header */
+
+header{
+    background-color: #0960EF;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+#cont-iniciales{
+    border: 2px solid #131515;
+    width: 80px;
+    height: 52px;
+    float: left;
+    margin: 8px auto auto 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+#iniciales{
+    font-size: 50px;
+    margin: 2px;
+}
+
+nav{
+    float: right;
+    margin: 15px 70px auto auto;
+}
+
+a{
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+a:hover{
+    background-color: #131515;
+}
+
+.icono{
+    display: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 23px 20px;
+    position: absolute;
+    float: right;
+    right: 30px;
+}
+
+.icono:hover{
+    cursor: pointer;
+}
+
+/* Estilos Header "Reposive" */
+
+@media screen and (max-width:700px){
+    .icono{
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+        top: 55px;
+        background: #515555;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+    }
+
+    a{
+        display: inherit;
+        background: #0960EF;
+        border: 1px solid #fff;
+        border-radius: 0;
+        margin: auto;
+    }
+}
+
+/* Estilos section*/
+
+main{
+    padding-top: 150px;
+}
+
+.cont-section{
+    width: 85%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+
+#cont-foto{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #131515;
+    float: left;
+}
+
+#cont-foto img{
+    width: 248px;
+    height: 248px;
+    margin: 1px 1px 1px 1px;
+}
+
+#ate-foto{
+    float: left;
+    margin: 20px auto auto 30px;
+}
+
+.ate-texto{
+    float: left;
+    margin: 0 auto auto 30px;
+    font-family: pirulin;
+}
+
+.cont-titulo{
+    width: 250px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.cont-titulo h2{
+    text-align: center;
+    font-family: pirulen;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#cont-nombre{
+    width: 252px;
+    height: 41px;
+}
+
+#cont-nombre p{
+    text-align: center;
+    font-family: pirulen;
+    font-size: 17px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#cont-texto{
+    width: 500px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+#cont-texto p{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#cont-img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 80px auto auto 30px;
+}
+
+#cont-img img{
+    width: 250px;
+    height: 250px;
+}
+
+
+/* Estilos "Pagina "Reposive"  */
+
+@media screen and (max-width:1050px){
+
+    .cont-section{
+        width: 100%;
+    }
+
+    #cont-texto{
+        width: 350px;
+        height: 250px;
+        margin-top: 0;
+    }
+
+    #texto-cb{
+        margin-left: 200px;
+    }
+    
+    #cont-texto p{
+        text-align: center;
+        font-family: pirulin;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+}
+
+#stn-experiencia{
+    margin: 150px auto;
+    height: 250px;
+}
+
+/* Estilos Metas */
+#cont-metas{
+    display: flex;
+    color : #fff;
+  }
+
+  .caja-metas{
+    background-color:#0960EF; 
+    width: 30%;
+    margin: auto 6px;
+    text-align: center;
+  }
+
+  .caja-metas img{
+      margin-top: 9px;
+  }
+  
+  .caja-metas>p{
+    text-align: center;
+  }
+
+  /* Estilos Footer */
+footer{
+    background-color: #515555;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+footer p {
+    line-height: 50px;
+}
